@@ -52,6 +52,9 @@ main{
     height: 500px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.685);
+
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
 }
 
 #imagem{
@@ -78,6 +81,11 @@ form{
     margin: 0px;
 }
 
-form > label, input{
+form > label{
     margin-top: 20px;
+}
+
+form > input{
+    height: 30px;
+    border-radius: 5px;
 }
