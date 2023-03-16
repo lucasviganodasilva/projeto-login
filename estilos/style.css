@@ -1,7 +1,83 @@
 @charset "UTF-8";
 
 /* 
-Paleta de cores
-Verde: #49a09d
-Lilás: #5f2c82
+Paleta de cores tênis
+Cinza claro: #A4B3BF
+Cinza escuro: #3D3E40
+Laranja: #BF863F
+
+Paleta de cores pattern
+Rosa: #F2D5ED
+Azul: #0383C0
+Azul claro: #04C4D9
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --fonte1: 'Lato', sans-serif;;
+    --cor1: #F2D5ED;
+    --cor2: #0383C0;
+    --cor3: #04C4D9;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte1);
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor2);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.685);
+}
+
+#imagem{
+    display: block;
+    background: var(--cor3) url('../imagens/pattern.jpg') no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: right top;
+}
+
+#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div > h1, p{
+    text-align: center;
+    margin: 10px;
+}
+
+form{
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+form > label, input{
+    margin-top: 20px;
+}
