@@ -6,17 +6,18 @@
         background-image: linear-gradient(to top, var(--cor2), var(--cor1));
     }
 
-    #login {
-        width: 90vw;
+    section#login {
+        width: 80vw;
+        height: 280px;
     }
 
-    #imagem{
+    section#login > div#imagem{
     float: right;
     width: 35%;
     height: 100%;
     }
 
-    #formulario{
+    section#login > div#formulario{
     float: left;
     width: 65%;
     }
@@ -29,28 +30,30 @@
         background-image: linear-gradient(to top, var(--cor2), var(--cor1));
     }
 
-    #login{
-        width: 990px;
+    section#login{
+        width: 950px;
+        height: 350px;
     }
 
-    #imagem{
+    section#login > div#imagem{
         float: right;
         width: 45%;
         height: 100%
     }
 
-    #formulario{
+    section#login > div#formulario{
         float: left;
         width: 55%;
         height: 100%;
     }
 
-    div h1{
+    div#formulario > h1{
         font-size: 2em;
     }
 
-    div p{
+    div#formulario > p{
         font-size: 1.3em;
+        margin: 20px 0px;
     }
 
 }
