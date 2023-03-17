@@ -45,4 +45,12 @@
         height: 100%;
     }
 
+    div h1{
+        font-size: 2em;
+    }
+
+    div p{
+        font-size: 1.3em;
+    }
+
 }

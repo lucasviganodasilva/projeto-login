@@ -17,16 +17,21 @@
                 <h1>Login</h1>
                 <p>Para entrar na sua conta, faça login.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <span class="material-icons">person_pin</span>
-                    <label for="iemail"></label>
-                    <input type="email" name="email" id="iemail">
-                    <br>
-                    <span class="material-icons">lock</span>
-                    <label for="isenha"></label>
-                    <input type="password" name="senha" id="isenha">
-                    <br>
+                    <div class="campo">
+                        <span class="material-icons">person_pin</span>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seu e-mail" required maxlength="30">
+                        <label for="iemail"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">lock</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="sua senha" required minlength="6" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
                     <input type="submit" value="Entrar">
-                    <br>
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-icons">attach_email</span>
+                    </a>
+                    
                 </form>
             </div>
         </section>
